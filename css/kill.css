@@ -1,0 +1,133 @@
+.background{
+    background-image:url("../sources/task4/杀手杀人底板.png");
+    width:640px;
+    height:1096px;
+
+}
+
+.title{
+    float:left;
+    font-size:38px;
+    margin-top:21px;
+    color:#ffffff;
+    margin-left:190px;
+    font-family: SimHei,serif;
+    line-height:38px;
+}
+
+.back{
+    background-image:url("../sources/task3/左上返回按钮.png");
+    width:24px;
+    height:44px;
+    float:left;
+    margin-left:24px;
+    margin-top:21px;
+
+}
+.close{
+    background-image:url("../sources/task3/右上关闭按钮.png ");
+    width:36px;
+    height:36px;
+    float:left;
+    margin-left:180px;
+    margin-top:21px;
+}
+.line{
+    width:640px;
+    float:left;
+    margin-top:20px;
+    border:1px #74e4db;
+}
+.tips1{
+    float:left;
+    margin-top:18px;
+    width:590px;
+    height:70px;
+    background-color:rgb(196,235,246);
+    font-size:25px;
+    color:#000000;
+    font-family:Simhei, serif;
+    padding-left:50px;
+    line-height:70px;
+}
+.tips2{
+    float:left;
+    margin-top:0; /*--border自动撑开了与父元素的距离,所以不需要margin-top:24px */
+    margin-left:80px;
+    border-top:24px solid rgb(196,235,246);
+    border-left:12px solid transparent;
+    border-right:12px solid transparent;
+}
+.tips3{
+    float:left;
+    font-size:22px;
+    color:rgb(200,236,244);
+    font-family: Simhei, serif;
+    margin-left:-27px;
+    margin-top:27px;
+
+}
+
+.list{
+    width:640px;
+    height:720px;
+    float:left;
+    margin:0 auto;
+    overflow: auto;
+
+
+}
+.confirm{
+    float:left;
+    width:490px;
+    height:85px;
+    text-align:center;
+    color:#ffffff;
+    font-family: Simhei, serif;
+    font-size:40px;
+    line-height:85px;
+    margin-top:5px;
+    margin-left:82px;
+}
+
+.id{
+    float:left;
+    margin:50px 35px 0 35px;
+    width:136px;
+    height:166px;
+    background-image:url(../sources/task3/目标头像.png);
+    background-repeat: no-repeat;
+    background-position:0 0;
+}
+
+
+.order{
+    width:136px;
+    height:105px;
+    float:left;
+    font-size:30px;
+    color:#000000;
+    font-family: Simhei, serif;
+    text-align:center;
+    line-height:114px;
+}
+.num2{
+    width:136px;
+    height:31px;
+    float:left;
+    font-size:22px;
+    line-height:30px;
+    color:#ffffff;
+    font-family: Simhei, serif;
+    font-weight:bold;
+    text-align:center;
+
+}
+.tag{
+    width:30px;
+    height:30px;
+    background-image:url(../sources/task1&2/杀人按钮.png);
+    float:left;
+    margin-top:8px;
+    margin-left:53px;
+}

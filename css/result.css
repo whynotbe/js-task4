@@ -1,13 +1,13 @@
 .background
 {
-    background-image:url(../sources/taks1&2/3-背景板.png);
+    background-image:url(../sources/task1&2/3-背景板.png);
     width:640px;
     height:1096px;
     padding-top:1px;
     position:relative;
 }
 .setting{
-    background-image: url(../sources/taks1&2/3-左上主页按钮.png);
+    background-image: url(../sources/task1&2/3-左上主页按钮.png);
     position: absolute;
     top:23px;
     left:20px;
@@ -29,20 +29,20 @@
     top:24px;
     width:40px;
     height:40px;
-    background-image: url(../sources/taks1&2/3-右上信息按钮.png);
+    background-image: url(../sources/task1&2/3-右上信息按钮.png);
 }
 .result{
     width:350px;
     height:210px;
     position: absolute;
-    background-image: url(../sources/taks1&2/3-结果花圈.png);
+    background-image: url(../sources/task1&2/3-结果花圈.png);
     left:145px;
     top:113px;
 }
 .cup{
     width:85px;
     height:84px;
-    background-image: url(../sources/taks1&2/3-结果奖杯.png);
+    background-image: url(../sources/task1&2/3-结果奖杯.png);
     position:absolute;
     top:22px;
     left:135px;
@@ -125,7 +125,7 @@
 .oncemore{
     width:271px;
     height:86px;
-    background-image:url(../sources/taks1&2/3-左下按钮.png);
+    background-image:url(../sources/task1&2/3-左下按钮.png);
     position:absolute;
     top:991px;
     left:25px;
@@ -138,7 +138,7 @@
 .share{
     width:271px;
     height:86px;
-    background-image:url(../sources/taks1&2/3-右下按钮.png);
+    background-image:url(../sources/task1&2/3-右下按钮.png);
     position:absolute;
     top:991px;
     left:345px;

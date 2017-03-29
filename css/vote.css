@@ -1,6 +1,6 @@
 .box{
     padding-top:1px;
-    background-image: url(../sources/taks1&2/2-背景版.png);
+    background-image: url(../sources/task1&2/2-背景版.png);
     width:640px;
     height:1096px;
     position:relative;
@@ -14,7 +14,7 @@
 }
 .settings
 {
-    background-image:url(../sources/taks1&2/左上设置按钮.png);
+    background-image:url(../sources/task1&2/左上设置按钮.png);
     width:39px;
     height:40px;
     position:absolute;
@@ -22,7 +22,7 @@
     top:33px;
 }
 .close{
-    background-image:url(../sources/taks1&2/右上关闭按钮.png);
+    background-image:url(../sources/task1&2/右上关闭按钮.png);
     width:36px;
     height:36px;
     position: absolute;
@@ -57,7 +57,7 @@
     top:103px;
     width:55px;
     height:55px;
-    background-image: url(../sources/taks1&2/2投票提示栏按钮.png);
+    background-image: url(../sources/task1&2/2投票提示栏按钮.png);
 }
 .body{
     width:636px;
@@ -96,7 +96,7 @@
     margin-right:30px;
     width:136px;
     height:136px;
-    background-image: url(../sources/taks1&2/目标头像.png);
+    background-image: url(../sources/task1&2/目标头像.png);
     float:left;
 }
 .playername{

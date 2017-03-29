@@ -49,8 +49,10 @@ function showid(){
 
 function next(){
     var next = document.getElementsByClassName("next")[0];
+    var url = window.location.href.split("=")[1];
+    var newUrl = "6-gameStart.html"+"?index="+url;
     next.onclick = function(){
-        alert("敬请期待");
+        window.location.href = newUrl;
     }
 
 }

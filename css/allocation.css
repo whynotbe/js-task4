@@ -53,7 +53,7 @@ body{
     box-shadow:0 3px 3px  -3px #828282;
 }
 .killerIcon{
-    background-image:url(../sources/taks1&2/杀手.png);
+    background-image:url(../sources/task1&2/杀手.png);
     width:48px;
     height:48px;
     float:left;
@@ -62,7 +62,7 @@ body{
 
 }
 .civilIcon{
-    background-image:url(../sources/taks1&2/水民.png);
+    background-image:url(../sources/task1&2/水民.png);
     width:48px;
     height:48px;
     float:left;

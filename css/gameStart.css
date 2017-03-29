@@ -1,0 +1,135 @@
+.background{
+    width:640px;
+    height:1096px;
+    background-image:url(../sources/task4/法官台版底板.png);
+    float:left;
+
+}
+.back{
+    float:left;
+    width:35px;
+    height:52px;
+    margin-top:24px;
+    margin-left:18px;
+}
+.close{
+    float:right;
+    margin-top:30px;
+    margin-right:22px;
+    width:47px;
+    height:47px;
+}
+.date{
+    float:left;
+    margin:45px auto;
+    width:640px;
+    height:86px;
+    font-size:30px;
+    font-family:"SimHei",serif;
+    color:#29bde0;
+    text-align:center;
+    line-height:86px;
+}
+.tri{
+    float:left;
+    width:640px;
+    height:15px;
+    margin-top:-44px;
+    background-image: url(../sources/task4/三角展开符号.png);
+    background-position:center;
+    background-repeat:no-repeat;
+}
+.mainAction{
+    width:545px;
+    float:right;
+    margin-top:-30px;  /*为什么需要-30呢?不懂*/
+    margin-right:9px;
+    padding-top:24px;
+    background-color:#ffffff;
+    height:707px;
+}
+.action{
+    width:484px;
+    height:76px;
+    float:left;
+    margin-top:10px;
+    margin-bottom:10px;
+    background-image:url("../sources/task4/状态栏.png");
+    text-align:center;
+    line-height:76px;
+    font-size:30px;
+    color:#ffffff;
+    font-family: "Microsoft YaHei UI",serif;
+}
+.aside{
+    float:left;
+    margin-left:8px;
+
+    width:78px;
+    height:731px;
+    margin-top:-30px;
+    background-color:#ffffff;
+    position: relative;
+}
+.line{
+    float:left;
+
+    border:2px solid #c9c9c9;
+    height:731px;
+    position:absolute;
+    left:36px;
+    top:0;
+    z-index:1;
+
+}
+.moon{
+    width:60px;
+    height:60px;
+    top:42px;
+    left:8px;
+    background-image:url(../sources/task4/夜晚状态符号.png);
+    z-index:2;
+    background-color:#ffffff;
+    position:absolute;
+}
+.sun{
+    width:60px;
+    height:60px;
+    top:138px;
+    left:8px;
+    background-image:url(../sources/task4/白天状态符号.png);
+    background-color:#ffffff;
+    position: absolute;
+    z-index:2;
+
+
+}
+
+.left-button{
+    width:270px;
+    height:85px;
+    background-color:rgb(248,189,59);
+    border-radius:8px;
+    color:#ffffff;
+    font-size:40px;
+    font-family: "Microsoft YaHei UI",serif;
+    text-align:center;
+    line-height:85px;
+    margin-top:30px;
+    margin-left:35px;
+    float:left;
+}
+.right-button{
+    width:270px;
+    height:85px;
+    background-color:rgb(248,189,59);
+    border-radius:8px;
+    color:#ffffff;
+    font-size:40px;
+    font-family: "Microsoft YaHei UI",serif;
+    text-align:center;
+    line-height:85px;
+    margin-top:30px;
+    margin-right:35px;
+    float:right;
+}
