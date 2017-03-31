@@ -48,21 +48,19 @@ function chooseVictim(){
     var players = document.getElementsByClassName("id");
     final = 0;
     finalId = 0;
-    for(var i = 0; i<players.length;i++){
+    for(var i = 0; i < players.length;i++){
 
             players[i].onclick =function(){
-                final=this.childNodes[1].innerHTML.charAt(0);
-                finalId=this.childNodes[0].innerHTML;
                 var oldTag = document.getElementsByClassName("tag");
-                for(var i = 0;i<oldTag.length;i++){
-                    oldTag[i].setAttribute("style","display:none");
-                }
+                for(var j = 0; j<oldTag.length;i++)
+                {
+                    oldTag[j].setAttribute("style","display:none");
+                } 
                 var tag = document.createElement("div");
                 tag.setAttribute("class","tag");
-                this.appendChild(tag);  //这个怎么破,不能用players[i],只能用this.;               //另外感觉应该有更好的方式,可以点一下显示,再点一下取消.现在的无法取消,只能转换
+                players[i].appendChild(tag);  //这个怎么破,不能用players[i],只能用this.;               //另外感觉应该有更好的方式,可以点一下显示,再点一下取消.现在的无法取消,只能转换
         
             }
-        
 
     }
 }
@@ -71,7 +69,7 @@ function confirm(){
     var confirm = document.getElementById("confirm");
     confirm.onclick = function(){
         if(final != 0){
-
+        localStorage.currentStatus = 1;
         var url = window.location.href.split("=")[1];
         var array = url.split(",");
         array.unshift(finalId);

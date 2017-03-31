@@ -8,4 +8,20 @@ function run(){
         window.location.href="2-allocation.html";
     }
 }
+/*
+var kikk = "The Window";
+var object = {
+    name:"My Object",
+    getNameFunc:function(){
+        return function(){
+            return this.kikk;
+        }
+    }
+};
+
+alert(object.getNameFunc()());
+*/
+
+
+
 
