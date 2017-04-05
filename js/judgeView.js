@@ -8,7 +8,7 @@ window.onload = function()
     next();
     back();
     close();
-}
+};
 
 function showid(){
     var url = window.location.href.split("=")[1];

@@ -56,10 +56,12 @@ function chooseVictim(){
                 {
                     oldTag[j].setAttribute("style","display:none");
                 } 
+                final = this.childNodes[1].innerHTML.charAt(0);
+                finalId = this.childNodes[0].innerHTML;
                 var tag = document.createElement("div");
                 tag.setAttribute("class","tag");
-                players[i].appendChild(tag);  //这个怎么破,不能用players[i],只能用this.;               //另外感觉应该有更好的方式,可以点一下显示,再点一下取消.现在的无法取消,只能转换
-        
+                this.appendChild(tag);  //这个怎么破,不能用players[i],只能用this.;               //另外感觉应该有更好的方式,可以点一下显示,再点一下取消.现在的无法取消,只能转换
+                //原来是闭包的问题,闭包只能访问全局变量和函数内部变量,不能向上访问局部变量.
             }
 
     }
@@ -75,8 +77,8 @@ function confirm(){
         array.unshift(finalId);
         array.unshift(final);
         array.join();
-        var url2 ="6-gameStart.html"+"?index="+array;
-        window.location.href = url2;
+
+        window.location.href = "6-gameStart.html"+"?index="+array;
     }
     else{
         alert("请选择一个目标");
