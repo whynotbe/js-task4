@@ -4,7 +4,7 @@
 window.onload = function(){
     nextPlayer();
     back();
-    close
+    close();
 }
 
 
@@ -44,6 +44,7 @@ function nextPlayer(){
         nextPlayer.innerHTML = "法官查看";
     }
     nextPlayer.onclick = function(){
+        localStorage.currentStatus = 0;
 
         var newUrl = a.replace(index,nextNum);  //string好像没有直接修改指定位置字符的函数
         window.location.href ="3-checkId-1.html"+"?index="+newUrl; 

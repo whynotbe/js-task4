@@ -52,6 +52,7 @@ function next(){
     var url = window.location.href.split("=")[1];
     var newUrl = "6-gameStart.html"+"?index="+url;
     next.onclick = function(){
+
         window.location.href = newUrl;
     }
 
