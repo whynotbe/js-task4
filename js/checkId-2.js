@@ -5,7 +5,7 @@ window.onload = function(){
     nextPlayer();
     back();
     close();
-}
+};
 
 
 function nextPlayer(){
@@ -45,6 +45,10 @@ function nextPlayer(){
     }
     nextPlayer.onclick = function(){
         localStorage.currentStatus = 0;
+        localStorage.currentDate = 1;
+        localStorage.changeDate = 0;
+        localStorage.killed ="";
+        localStorage.voted ="";
 
         var newUrl = a.replace(index,nextNum);  //string好像没有直接修改指定位置字符的函数
         window.location.href ="3-checkId-1.html"+"?index="+newUrl; 

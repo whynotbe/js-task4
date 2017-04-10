@@ -13,6 +13,7 @@
     left:20px;
     width:51px;
     height:42px;
+    cursor:pointer;
 }
 .head-words{
     position:absolute;
@@ -30,6 +31,7 @@
     width:40px;
     height:40px;
     background-image: url(../sources/task1&2/3-右上信息按钮.png);
+    cursor:pointer;
 }
 .result{
     width:350px;
@@ -47,13 +49,13 @@
     top:22px;
     left:135px;
 }
-.result-discription{
+.resultDiscription {
     position: absolute;
-    left:79px;
+    left:81px;
     top:143px;
     font-family: Simhei, serif;
-    line-height: 48px;
-    font-size:48px;
+    line-height: 44px;
+    font-size:44px;
     color:#ffffff;
 
 }
@@ -81,46 +83,53 @@
 
 .record{
     width:640px;
-    height:384px;
+    height:264px;
     position:absolute;
     left:0;
     top:712px;
     font-family: "Microsoft JhengHei UI Light",serif;
+    overflow: auto;
+    background-color:#ffffff;
+    z-index:99;
 }
+
+.record::-webkit-scrollbar{
+    width:5px;
+    color:rgb(41,189,224);
+    background-color:rgb(41,189,224);
+}
+
 .day1{
     height:167px;
+    width:590px;
     font-size:26px;
     color:#a6a6a6;
     line-height:36px;
-    position:relative;
-    padding-left:77px;
-    padding-top:14px;
+    float:left;
+    padding-left:40px;
+
+
 }
-.day2{
-    height:167px;
-    font-size:26px;
-    color:#a6a6a6;
-    line-height:36px;
-    position:relative;
-    padding-left:77px;
-    padding-top:14px;
-}
+
 .time{
-    position:absolute;
+
     font-family: "Microsoft YaHei UI Light",serif;
     font-size:20px;
     color:#c7c7c7;
-    left:436px;
-    top:22px;
-    width:120px;
+    margin-right:50px;
+    margin-top:-22px;
+    width:80px;
     line-height:22px;
+    float:right;
 }
 .dayNumber{
     font-size:30px;
     line-height:30px;
     height:30px;
+    width:80px;
     font-family: Simhei, serif;
     color:#515151;
+    margin-top:10px;
 }
 .oncemore{
     width:271px;
@@ -134,6 +143,7 @@
     color:#ffffff;
     text-align:center;
     line-height:86px;
+    cursor:pointer;
 }
 .share{
     width:271px;
@@ -147,4 +157,5 @@
     color:#ffffff;
     text-align:center;
     line-height:86px;
+    cursor:pointer;
 }

@@ -5,42 +5,55 @@ window.onload =  function(){
     showid();
     chooseVictim();
     confirm();
-}
+    close();
+};
 
 function showid(){
     var url = window.location.href.split("=")[1];
     var array = url.split(",");
     array.shift();
-    var killerNum = array.shift();
-    var civilNum = array.shift();
-    var killers = array.splice(0,killerNum);
-    var civil = array.splice(0,civilNum);
-    var wholeNum = parseInt(killerNum) + parseInt(civilNum);
+    var killers = localStorage.killers.split(",");
+    var civil = localStorage.civil.split(",");
+    var killerNum = killers.length;
+    var civilNum = civil.length;
+    console.log(killerNum);
+    console.log(civilNum);
+    console.log(killers);
+    console.log(civil);
+    console.log(localStorage.killers);
+    console.log(localStorage.civil);
 
-    for(var i = 1;i <= wholeNum;i++){      //根据玩家数量,创建角色头像板元素
+    for(var i = 1;i <= localStorage.wholeNum;i++){      //根据玩家数量,创建角色头像板元素
         var list = document.getElementById("list");
         var id = document.createElement("div");
         id.setAttribute("class","id");
         var order = document.createElement("div");
         if(killers.indexOf(i.toString())>=0){
             order.innerHTML = "杀手";      //判断角色身份
+            var num2 = document.createElement("div");
+            num2.innerHTML = i + "号";    //判断角色序号
+            order.setAttribute("class","order");
+            num2.setAttribute("class","num2");
+            id.setAttribute("class","id");
+            id.appendChild(order);   //添加角色身份
+            id.appendChild(num2);    //添加角色序号
+            list.appendChild(id);  //添加角色头像板元素
         }
         else if (civil.indexOf(i.toString()) >=0){
             order.innerHTML = "平民";
+            var num3 = document.createElement("div");
+            num3.innerHTML = i + "号";    //判断角色序号
+            order.setAttribute("class","order");
+            num3.setAttribute("class","num2");
+            id.setAttribute("class","id");
+            id.appendChild(order);   //添加角色身份
+            id.appendChild(num3);    //添加角色序号
+            list.appendChild(id);  //添加角色头像板元素
         }
         else{
             order.innerHTML = "未知"
         }
-
-        var num2 = document.createElement("div");
-        num2.innerHTML = i + "号";    //判断角色序号
-        order.setAttribute("class","order");
-        num2.setAttribute("class","num2");
-        id.setAttribute("class","id");
-        id.appendChild(order);   //添加角色身份
-        id.appendChild(num2);    //添加角色序号
-        list.appendChild(id);  //添加角色头像板元素
-
+        
     }
 }
 
@@ -52,7 +65,7 @@ function chooseVictim(){
 
             players[i].onclick =function(){
                 var oldTag = document.getElementsByClassName("tag");
-                for(var j = 0; j<oldTag.length;i++)
+                for(var j = 0; j<oldTag.length;j++)
                 {
                     oldTag[j].setAttribute("style","display:none");
                 } 
@@ -71,17 +84,52 @@ function confirm(){
     var confirm = document.getElementById("confirm");
     confirm.onclick = function(){
         if(final != 0){
+            if(finalId =="平民"){
+                var civil =localStorage.civil.split(",");
+                civil.splice(civil.indexOf(final),1);
+                localStorage.civil=civil.join(",");
+            }
+            else if(finalId =="杀手"){
+                var killers = localStorage.killers.split(",");
+                killers.splice(killers.indexOf(final),1);
+                localStorage.killers = killers.join(",");
+            }
+     
         localStorage.currentStatus = 1;
+        if(localStorage.currentDate ==1){
+            var killed =[];
+            killed.push(final);
+            localStorage.killed = killed.join();
+            var killedId = [];
+            killedId.push(finalId);
+            localStorage.killedId = killedId.join();
+        }
+            else{
+            var killed1 = localStorage.killed.split(",");
+            console.log("ok");
+            killed1.push(final);
+            localStorage.killed = killed1.join();
+            var killedId1 =localStorage.killedId.split(",");
+            killedId1.push(finalId);
+            localStorage.killedId = killedId1.join();
+        }
         var url = window.location.href.split("=")[1];
         var array = url.split(",");
         array.unshift(finalId);
         array.unshift(final);
         array.join();
-
         window.location.href = "6-gameStart.html"+"?index="+array;
     }
     else{
         alert("请选择一个目标");
     }
+    }
+}
+
+function close(){
+    var close = document.getElementById("close");
+    close.onclick = function(){
+        localStorage.clear();
+        window.location.href = "1-main.html";
     }
 }

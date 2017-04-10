@@ -11,43 +11,67 @@
     height:52px;
     margin-top:24px;
     margin-left:18px;
+    cursor:pointer;
 }
+
 .close{
     float:right;
     margin-top:30px;
     margin-right:22px;
     width:47px;
     height:47px;
+    cursor:pointer;
 }
+.main{
+    float:left;
+    padding-top:45px;
+    margin-top:8px;
+    width:641px;
+    height:827px;
+    overflow: auto;
+}
+.main::-webkit-scrollbar{
+    width:5px;
+    background-color:rgb(36,167,198);
+}
+
+
+
 .date{
     float:left;
-    margin:45px auto;
-    width:640px;
-    height:86px;
+    margin-top:1px;
+    margin-left:9px;
+    width:620px;
+    height:84px;
     font-size:30px;
     font-family:"SimHei",serif;
     color:#29bde0;
     text-align:center;
     line-height:86px;
+    border:1px solid rgb(205,205,205);
+    background-color:#ffffff;
 }
 .tri{
     float:left;
-    width:640px;
+    width:630px;
     height:15px;
-    margin-top:-44px;
+    margin-top:0;
+    margin-left:5px;
     background-image: url(../sources/task4/三角展开符号.png);
     background-position:center;
     background-repeat:no-repeat;
 }
 .mainAction{
-    width:545px;
-    float:right;
-    margin-top:-30px;  /*为什么需要-30呢?不懂*/
-    margin-right:9px;
+    width:520px;
+    float:left;
+    margin-top:0;  /*为什么需要-30呢?不懂,好吧, 原来是因为date设置了margin 45 0;包括margin-bootom也等于45px*/
+    margin-left:0;
     padding-top:24px;
     background-color:#ffffff;
-    height:707px;
+    height:698px;
+
 }
+
 .action{
     width:484px;
     float:left;
@@ -61,14 +85,18 @@
     font-size:30px;
     color:#ffffff;
     font-family: "Microsoft YaHei UI",serif;
+    cursor:pointer;
+}
+.action:hover{
+    color:rgb(59,89,152);
 }
 .aside{
     float:left;
-    margin-left:8px;
+    margin-left:9px;
 
     width:78px;
-    height:731px;
-    margin-top:-30px;
+    height:721px;
+    margin-top:0;
     background-color:#ffffff;
     position: relative;
 }
@@ -76,7 +104,7 @@
     float:left;
 
     border:2px solid #c9c9c9;
-    height:731px;
+    height:721px;
     position:absolute;
     left:36px;
     top:0;
@@ -119,6 +147,10 @@
     margin-top:30px;
     margin-left:35px;
     float:left;
+    cursor:pointer;
+}
+.left-button:hover{
+    color:rgb(59,89,152);
 }
 .right-button{
     width:270px;
@@ -133,6 +165,10 @@
     margin-top:30px;
     margin-right:35px;
     float:right;
+    cursor:pointer;
+}
+.right-button:hover{
+    color:rgb(59,89,152);
 }
 
 .bonus{

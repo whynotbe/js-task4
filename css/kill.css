@@ -16,7 +16,6 @@
 }
 
 .back{
-    background-image:url("../sources/task3/左上返回按钮.png");
     width:24px;
     height:44px;
     float:left;
@@ -31,6 +30,7 @@
     float:left;
     margin-left:180px;
     margin-top:21px;
+    cursor:pointer;
 }
 .line{
     width:640px;
@@ -74,9 +74,13 @@
     float:left;
     margin:0 auto;
     overflow: auto;
-
-
 }
+
+.list::-webkit-scrollbar{
+    width:5px;
+    background-color:#ffffff;
+}
+
 .confirm{
     float:left;
     width:490px;
@@ -88,6 +92,10 @@
     line-height:85px;
     margin-top:5px;
     margin-left:82px;
+    cursor:pointer;
+}
+.confirm:hover{
+    color:rgb(59,89,152);
 }
 
 .id{
@@ -98,6 +106,11 @@
     background-image:url(../sources/task3/目标头像.png);
     background-repeat: no-repeat;
     background-position:0 0;
+    cursor:pointer;
+
+}
+.id:hover{
+    color:rgb(59,89,152);
 }
 
 

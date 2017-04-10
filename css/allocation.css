@@ -6,7 +6,9 @@
     transform: rotate(45deg);
     margin-left:25px;
     margin-top:30px;
+    cursor:pointer;
 }
+
 .tri-before{
     position:absolute;
     width:28px;
@@ -14,6 +16,7 @@
     top:-4px;
     left:4px;
     background-color:#48c4e5;
+    cursor:pointer;
 }
 .head{
     background-color:#48c4e5;
@@ -78,7 +81,7 @@ body{
     float:left;
     margin-top:26px;
     margin-left:20px;
-    font-size:20px;
+    font-size:25px;
 
 }
 .civilNumber{
@@ -89,7 +92,7 @@ body{
     float:left;
     margin-top:26px;
     margin-left:20px;
-    font-size:20px;
+    font-size:25px;
 
 
 }
@@ -139,4 +142,8 @@ body{
     font-family: Simhei, serif;
     float:left;
     margin:-70px auto;
+    cursor:pointer;
+}
+.submit:hover{
+    color:rgb(59,89,152);
 }
