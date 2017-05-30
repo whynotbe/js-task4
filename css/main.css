@@ -1,3 +1,8 @@
+.body{
+    width:640px;
+    height:1096px;
+}
+
 .box {
     background-image: url(../sources/task1&2/background.png);
     background-position:0 0;
