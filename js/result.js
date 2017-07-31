@@ -32,11 +32,12 @@ function result(){
     console.log(localStorage.votedId);
      killed = localStorage.killed.split(",");
      voted = localStorage.voted.split(",");
+    console.log(voted);
      killedId =localStorage.killedId.split(",");
-     votedId =localStorage.votedId.split(",");
+        votedId =localStorage.votedId.split(",");
     var currentDate =localStorage.currentDate;
     var record =document.getElementById("record");
-    for(var i = 1;i<localStorage.currentDate;i++){
+    for(var i = 1;i<=localStorage.currentDate;i++){
         var rec = document.createElement("div");
         var dayNumber = document.createElement("div");
         var day1 = document.createElement("day1");
@@ -47,10 +48,12 @@ function result(){
         dayNumber.setAttribute("class","dayNumber");
         dayNumber.innerHTML = "第"+i+"天";
         time.setAttribute("class","time");
-        time.innerHTML="0时0"+i+"分";
+        time.innerHTML="0时"+i+"分";
         var j = i -1;
-        p1.innerHTML = "晚上:"+killed[j]+"号被杀手杀死"+killed[j]+"号是"+killedId[j];
-        p2.innerHTML = "白天:"+voted[j]+"号被全民投票投死,"+voted[j]+"号是"+votedId[j];
+        p1.innerHTML = "晚上:"+killed[j]+"号被杀手杀死,"+killed[j]+"号是"+killedId[j];
+        if(voted != ""&&voted.length >= i){
+            p2.innerHTML = "白天:"+voted[j]+"号被全民投票投死,"+voted[j]+"号是"+votedId[j];
+        }
         day1.appendChild(dayNumber);
         day1.appendChild(time);
         day1.appendChild(p1);

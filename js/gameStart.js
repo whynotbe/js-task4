@@ -132,6 +132,7 @@ function gameOver(){
     if(localStorage.killers ==""){            //killers.length,哪怕killers为空数组,也不会为0,所以不能用这个判断
         alert("游戏结束,平民获得了胜利,");
         localStorage.result = 0;
+        window.location.href="9-result.html";
         var endGame = document.getElementsByClassName("left-button")[0];
         endGame.onclick = function(){
             window.location.href="9-result.html";
@@ -151,6 +152,7 @@ function gameOver(){
     else if (killers.length >=civil.length){
         alert("游戏结束,杀手获得了胜利");
         localStorage.result =1;
+        window.location.href="9-result.html";
         var endGame1 = document.getElementsByClassName("left-button")[0];
         endGame1.onclick = function(){
             window.location.href="9-result.html";

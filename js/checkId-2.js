@@ -49,6 +49,8 @@ function nextPlayer(){
         localStorage.changeDate = 0;
         localStorage.killed ="";
         localStorage.voted ="";
+        localStorage.votedId = "";
+        localStorage.killedId = "";
 
         var newUrl = a.replace(index,nextNum);  //string好像没有直接修改指定位置字符的函数
         window.location.href ="3-checkId-1.html"+"?index="+newUrl; 
