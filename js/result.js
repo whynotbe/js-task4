@@ -25,7 +25,7 @@ function result(){
     console.log(0);
     var simRecord = document.getElementById("discription3");
     simRecord.innerHTML ="本次游戏共计用时"+(localStorage.currentDate-1)+"分钟" +"<br/>"+"<br/>"+
-            "杀手 "+localStorage.killerNum+" 人  "+"平民"+localStorage.civilNum+" 人";
+            "杀手 "+localStorage.killerNum+" 人  "+"平民 "+localStorage.civilNum+" 人";
     console.log(localStorage.killed);
     console.log(localStorage.voted);
     console.log(localStorage.killedId);
@@ -50,9 +50,14 @@ function result(){
         time.setAttribute("class","time");
         time.innerHTML="0时"+i+"分";
         var j = i -1;
-        p1.innerHTML = "晚上:"+killed[j]+"号被杀手杀死,"+killed[j]+"号是"+killedId[j];
+        if(killed !=""&&killed.length >= i){
+            p1.innerHTML = "晚上:"+killed[j]+"号被杀手杀死,"+killed[j]+"号是"+killedId[j];
+        }
         if(voted != ""&&voted.length >= i){
             p2.innerHTML = "白天:"+voted[j]+"号被全民投票投死,"+voted[j]+"号是"+votedId[j];
+        }
+        else{
+            p2.innerHTML = "游戏已结束";
         }
         day1.appendChild(dayNumber);
         day1.appendChild(time);
